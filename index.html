@@ -1,128 +1,25 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Portfolio_Site</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-
-		<!-- Sidebar brings the user to each section -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Who I Am</a></li>
-							<li><a href="#two">What I Have Done</a></li>
-							<li><a href="#three">Get in touch</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Intro Title and description -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Portfolio</h1>
-							<p>This is a collection of projects that I have worked on in the past as well as information about my knowledge.</p>
-						</div>
-					</section>
-
-				<!-- One Section about myself -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Who am I?</h2>
-									<p>My name is German Hernandez, and I am a programmer that graduated from <a href="https://www.neit.edu">New England Institute of Technology</a> in the year of 2021. </p>									
-								</div>
-							</div>
-						</section>						
-					</section>
-
-				<!-- One section describing the skill sets I'm confident in -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>What Have I Done?</h2>
-							<p>At New England Tech, I have achieved an understanding of programming through the learning of languages, understanding of processes needed to create a program, and the problem solving needed to solve issues that arise while programming, as well as methods to try and limit memory usage.</p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>C++</h3>
-									<p>I have spent the most time learning c++ making me most knowlegdeable with this language and making 2 games based on this language to various degrees.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>C#</h3>
-									<p>I have been using C# more recently do to my use of Unity as a game engine used to create larger scale projects.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Python</h3>
-									<p>I used python in order to use it along side S.Q.L. in order to make small scale databases to store data.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Unity</h3>
-									<p>This is the only large scale game engine that I have experience with and have made a group project and a few solo projects using this software.</p>
-								</section>
-							</div>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>Do you want to reach out to me?</p>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Email</h3>
-											<a href="#">FreshlyINFAMOUS.gh@gmail.com</a>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy;Designed by: German Hernandez</li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Asteroid Avoidance</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/FreshlyINFAMOUS.github.io.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">Asteroid Avoidance</div>
+      </div>
+    </div>
+  </body>
 </html>
